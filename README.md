@@ -9,10 +9,6 @@ Primero, crearemos una red virtual.
   2. Desde la hoja *Todos los servicios*, busque y seleccione *Redes virtuales* y, luego, haga clic en *Agregar*.
 
   3. En la hoja de *Crear red virtual* complete con lo siguiente (deje los valores predeterminados para todo lo demás):
-
-
-  
-   
     | Configuración | Valores |
     |  -- | -- |
     | Nombre | **vnet1**|
