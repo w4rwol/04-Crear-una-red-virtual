@@ -40,21 +40,21 @@ En esta tarea crearemos dos máquinas virtuales en la red virtual.
 
   2. En la pestaña Datos básicos, complete la siguiente información (deje los valores predeterminados para todo lo demás):
 
-    | Configuración |	Valor |
-    | Suscripción	| Elija su suscripción |
-    | Grupo de recursos |	myRGVNet |
-    | Nombre de la máquina virtual | vm1 |
-    | Región	| Este de EE. UU. |
-    |Imagen |	Centro de datos de Windows Server 2019 |
-    | Nombre de usuario |	azureuser |
-    | Contraseña |	Pa$$w0rd1234 |
-    | Puertos de entrada públicos |	Seleccione Permitir puertos seleccionados |
-    | Puertos de entrada seleccionados	| RDP (3389)|
+      | Configuración |	Valor |
+      | Suscripción	| Elija su suscripción |
+      | Grupo de recursos |	myRGVNet |
+      | Nombre de la máquina virtual | vm1 |
+      | Región	| Este de EE. UU. |
+      |Imagen |	Centro de datos de Windows Server 2019 |
+      | Nombre de usuario |	azureuser |
+      | Contraseña |	Pa$$w0rd1234 |
+      | Puertos de entrada públicos |	Seleccione Permitir puertos seleccionados |
+      | Puertos de entrada seleccionados	| RDP (3389)|
     
   3. Seleccione la pestaña Redes. Asegúrese de que la máquina virtual esté ubicada en la red virtual vnet1. Revise la configuración predeterminada, pero no realice ningún otro cambio.
 
-    | Configuración	| Valor |
-    | Red virtual |	**vnet1** |
+      | Configuración	| Valor |
+      | Red virtual |	**vnet1** |
     
   4. Haga clic en Revisar y crear. Después de que la validación sea exitosa, haga clic en Crear. Los tiempos de implementación pueden variar, pero generalmente la implementación demora entre tres y seis minutos.
 
@@ -62,11 +62,11 @@ En esta tarea crearemos dos máquinas virtuales en la red virtual.
 
   6. Cree una segunda máquina virtual repitiendo los pasos anteriores del 2 al 4. Asegúrese de usar un nombre de máquina virtual diferente, que la máquina virtual esté dentro de la misma red virtual y que esté usando una nueva dirección IP pública:
 
-    | Configuración	| Valor |
-    | Grupo de recursos	| **myRGVNet** |
-    | Nombre de la máquina virtual |	**vm2** |
-    | Red virtual	| **vnet1** |
-    | IP pública	| (nuevo) **vm2-ip**| 
+      | Configuración	| Valor |
+      | Grupo de recursos	| **myRGVNet** |
+      | Nombre de la máquina virtual |	**vm2** |
+      | Red virtual	| **vnet1** |
+      | IP pública	| (nuevo) **vm2-ip**| 
 
   7. Espere a que se implementen ambas máquinas virtuales.
 
