@@ -9,16 +9,17 @@ Primero, crearemos una red virtual.
   2. Desde la hoja *Todos los servicios*, busque y seleccione *Redes virtuales* y, luego, haga clic en *Agregar*.
 
   3. En la hoja de *Crear red virtual* complete con lo siguiente (deje los valores predeterminados para todo lo demás):
-    | Configuración | Valores |
-    |  -- | -- |
-    | Nombre | **vnet1**|
-    | Espacio de direcciones | 10.1.0.0/16 |
-    | Suscripción | Seleccione su suscripción |
-    | Grupo de recursos | **myRGVNet** (crear nuevo)|
-    | Ubicación | **Este de EE. UU.**|
-    | Subred-Nombre | Predeterminado|
-    | Rango de dirección de subred | Predeterminado |
-    | | |
+  
+      | Configuración | Valores |
+      |  -- | -- |
+      | Nombre | **vnet1**|
+      | Espacio de direcciones | 10.1.0.0/16 |
+      | Suscripción | Seleccione su suscripción |
+      | Grupo de recursos | **myRGVNet** (crear nuevo)|
+      | Ubicación | **Este de EE. UU.**|
+      | Subred-Nombre | Predeterminado|
+      | Rango de dirección de subred | Predeterminado |
+      | | |
    
    
     img1
