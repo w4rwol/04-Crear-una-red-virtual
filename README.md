@@ -41,6 +41,7 @@ En esta tarea crearemos dos máquinas virtuales en la red virtual.
   2. En la pestaña Datos básicos, complete la siguiente información (deje los valores predeterminados para todo lo demás):
 
       | Configuración |	Valor |
+      | -- | -- |
       | Suscripción	| Elija su suscripción |
       | Grupo de recursos |	myRGVNet |
       | Nombre de la máquina virtual | vm1 |
@@ -55,6 +56,7 @@ En esta tarea crearemos dos máquinas virtuales en la red virtual.
   3. Seleccione la pestaña Redes. Asegúrese de que la máquina virtual esté ubicada en la red virtual vnet1. Revise la configuración predeterminada, pero no realice ningún otro cambio.
 
       | Configuración	| Valor |
+      | -- | -- |
       | Red virtual |	**vnet1** |
       | | |
     
@@ -65,6 +67,7 @@ En esta tarea crearemos dos máquinas virtuales en la red virtual.
   6. Cree una segunda máquina virtual repitiendo los pasos anteriores del 2 al 4. Asegúrese de usar un nombre de máquina virtual diferente, que la máquina virtual esté dentro de la misma red virtual y que esté usando una nueva dirección IP pública:
 
       | Configuración	| Valor |
+      | -- | -- |
       | Grupo de recursos	| **myRGVNet** |
       | Nombre de la máquina virtual |	**vm2** |
       | Red virtual	| **vnet1** |
