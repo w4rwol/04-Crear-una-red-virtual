@@ -50,11 +50,13 @@ En esta tarea crearemos dos máquinas virtuales en la red virtual.
       | Contraseña |	Pa$$w0rd1234 |
       | Puertos de entrada públicos |	Seleccione Permitir puertos seleccionados |
       | Puertos de entrada seleccionados	| RDP (3389)|
+      | | |
     
   3. Seleccione la pestaña Redes. Asegúrese de que la máquina virtual esté ubicada en la red virtual vnet1. Revise la configuración predeterminada, pero no realice ningún otro cambio.
 
       | Configuración	| Valor |
       | Red virtual |	**vnet1** |
+      | | |
     
   4. Haga clic en Revisar y crear. Después de que la validación sea exitosa, haga clic en Crear. Los tiempos de implementación pueden variar, pero generalmente la implementación demora entre tres y seis minutos.
 
@@ -67,6 +69,7 @@ En esta tarea crearemos dos máquinas virtuales en la red virtual.
       | Nombre de la máquina virtual |	**vm2** |
       | Red virtual	| **vnet1** |
       | IP pública	| (nuevo) **vm2-ip**| 
+      | | |
 
   7. Espere a que se implementen ambas máquinas virtuales.
 
