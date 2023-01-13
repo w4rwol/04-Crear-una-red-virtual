@@ -20,7 +20,21 @@ Primero, crearemos una red virtual.
     | Subred-Nombre | Predeterminado |
     | Rango de dirección de subred | **10.1.0.0/24** |
     | | |
-    
+   
+   
+   
+   
+     | Configuración | Valores |
+    |  -- | -- |
+    | Nombre | **vnet1**|
+    | Espacio de direcciones | 10.1.0.0/16 |
+    | Suscripción | Seleccione su suscripción |
+    | Grupo de recursos | **myRGVNet** (crear nuevo)|
+    | Ubicación | **Este de EE. UU.**|
+    | Subred-Nombre | Predeterminado|
+    | Rango de dirección de subred | Predeterminado |
+    | | |
+   
     img1
     
     
