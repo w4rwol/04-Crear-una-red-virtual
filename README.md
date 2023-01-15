@@ -107,7 +107,7 @@ Nota: Las siguientes instrucciones le indican cómo conectarse a su VM desde un 
 
 8. Intente hacer **ping a vm2** (asegúrese de que vm2 se esté ejecutando). Recibirá un **error que indica que la solicitud ha excedido el tiempo de espera**. El ping falla porque usa el Protocolo de mensajes de control de Internet (ICMP). De forma predeterminada, ICMP no está permitido a través del firewall de Windows.
 
-``` ping vm2 ```
+    ``` ping vm2 ```
 
 
 Nota: Ahora abrirá una sesión RDP en vm2 y permitirá conexiones entrantes ICMP
@@ -115,7 +115,7 @@ Nota: Ahora abrirá una sesión RDP en vm2 y permitirá conexiones entrantes ICM
 9. Conectar a vm2 mediante RDP. Puede seguir los pasos 2 a 6.
 10. Abra un aviso de PowerShell y habilite ICMP. Este comando permite conexiones entrantes ICMP a través del firewall de Windows:
 
-``` New-NetFirewallRule –DisplayName “Allow ICMPv4-In” –Protocol ICMPv4 ```
+    ``` New-NetFirewallRule –DisplayName “Allow ICMPv4-In” –Protocol ICMPv4 ```
 
 
 Nota: Ahora cambiará a la sesión RDP a **vm1** e intentará hacer ping nuevamente.
