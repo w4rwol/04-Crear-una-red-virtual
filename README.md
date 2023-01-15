@@ -22,10 +22,9 @@ Primero, crearemos una red virtual.
       | | |
    
    
-    img1
+![Alt text](./img/1.PNG)
     
     
-    img2
     
   4. Haga clic en el botón Revisar y crear. Asegúrese de que la validación sea exitosa.
 
@@ -61,8 +60,13 @@ En esta tarea crearemos dos máquinas virtuales en la red virtual.
       | | |
     
   4. Haga clic en Revisar y crear. Después de que la validación sea exitosa, haga clic en Crear. Los tiempos de implementación pueden variar, pero generalmente la implementación demora entre tres y seis minutos.
+  
+![Alt text](./img/2.PNG)
+![Alt text](./img/3.PNG)
 
   5. Supervise su implementación, pero continúe con el siguiente paso.
+
+![Alt text](./img/4.PNG)
 
   6. Cree una segunda máquina virtual repitiendo los pasos anteriores del 2 al 4. Asegúrese de usar un nombre de máquina virtual diferente, que la máquina virtual esté dentro de la misma red virtual y que esté usando una nueva dirección IP pública:
 
@@ -73,6 +77,8 @@ En esta tarea crearemos dos máquinas virtuales en la red virtual.
       | Red virtual	| **vnet1** |
       | IP pública	| (nuevo) **vm2-ip**| 
       | | |
+
+![Alt text](./img/5.PNG)
 
   7. Espere a que se implementen ambas máquinas virtuales.
 
@@ -87,9 +93,13 @@ Nota: Las siguientes instrucciones le indican cómo conectarse a su VM desde un 
 
 3. En la hoja Conectar a la máquina virtual, mantenga las opciones predeterminadas en conectarse por dirección IP a través del puerto 3389 y haga clic en Descargar archivo RDP.
 
+![Alt text](./img/6.PNG)
+
 4. Abra el archivo RDP descargado y haga clic en Conectar cuando se le solicite.
 
-5. En la ventana Seguridad de Windows, escriba el nombre de usuario azureuser y la contraseña Pa$$w0rd1234 y luego haga clic en Aceptar.
+5. En la ventana Seguridad de Windows, escriba el nombre de usuario azureuser y la contraseña Pa$$w0rd1234 y luego haga clic en Aceptar
+
+![Alt text](./img/7.PNG)
 
 6. Es posible que reciba una advertencia de certificado durante el proceso de inicio de sesión. Haga clic en Sí o cree la conexión y conéctese a su VM implementada. Debería conectarse correctamente.
 
@@ -97,21 +107,22 @@ Nota: Las siguientes instrucciones le indican cómo conectarse a su VM desde un 
 
 8. Intente hacer ping a vm2 (asegúrese de que vm2 se esté ejecutando). Recibirá un error que indica que la solicitud ha excedido el tiempo de espera. El ping falla porque usa el Protocolo de mensajes de control de Internet (ICMP). De forma predeterminada, ICMP no está permitido a través del firewall de Windows.
 
-*ping vm2*
-*img 3*
+``` ping vm2 ```
+
 
 Nota: Ahora abrirá una sesión RDP en vm2 y permitirá conexiones entrantes ICMP
 
 9. Conectar a vm2 mediante RDP. Puede seguir los pasos 2 a 6.
 10. Abra un aviso de PowerShell y habilite ICMP. Este comando permite conexiones entrantes ICMP a través del firewall de Windows.
 
-* New-NetFirewallRule –DisplayName “Allow ICMPv4-In” –Protocol ICMPv4 *
-*img 4*
+``` New-NetFirewallRule –DisplayName “Allow ICMPv4-In” –Protocol ICMPv4 ```
+
 
 Nota: Ahora cambiará a la sesión RDP a vm1 e intentará hacer ping nuevamente.
 
 11. Regrese a la sesión RDP a vm1 e intente hacer ping nuevamente. Ahora debería tener éxito.
-*ping vm2*
+![Alt text](./img/8.PNG)
+![Alt text](./img/9.PNG)
 ¡Enhorabuena! Ha configurado dos máquinas virtuales y las ha implementado en una red virtual. También ha configurado el firewall de Windows para que una de las máquinas virtuales permita las solicitudes de ping entrantes.
 
 Nota: Para evitar costes adicionales, puede quitar este grupo de recursos. Busque grupos de recursos, haga clic en su grupo de recursos y, a continuación, haga clic en Eliminar grupo de recursos. Compruebe el nombre del grupo de recursos y luego haga clic en Eliminar. Supervise las Notificaciones para ver cómo se realiza la eliminación.
